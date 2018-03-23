@@ -1,0 +1,12 @@
+<div class="inln-blk img-ctr selectDisable" id="img-ctr" #imgCtr>
+  <img src="https://www.roomsketcher.com/wp-content/uploads/2015/11/RoomSketcher-Office-Layout-2417478.jpg" alt="" id="currentImage">
+</div>
+<div class="inln-blk">
+  <mat-form-field>
+    <mat-select placeholder="Favorite food" [(ngModel)]="selectedFood" (ngModelChange)="imageService.addFood(selectedFood, 'currentImage', 'img-ctr')">
+      <mat-option *ngFor="let food of foods" [value]="food">
+        {{ food.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

@@ -1,0 +1,19 @@
+.inln-blk{
+  display: inline-block;
+}
+.img-ctr{
+  position: relative;
+}
+.img-ctr img{
+  pointer-events: none;
+}
+.img-ctr i{
+  cursor: pointer;
+}
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
